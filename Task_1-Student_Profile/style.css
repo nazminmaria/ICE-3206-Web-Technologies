@@ -1,0 +1,713 @@
+/* =====================================================
+   RESET
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   BODY
+   ===================================================== */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #f3f6fb;
+
+    color: #1f2937;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   NAVIGATION BAR
+   FLEXBOX
+   ===================================================== */
+
+.navbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 8%;
+
+    background: #172554;
+
+    color: white;
+}
+
+
+/* Logo */
+
+.logo {
+
+    color: white;
+
+    font-size: 23px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* Navigation links */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.nav-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 9px 15px;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+
+/* Navigation hover */
+
+.nav-links a:hover {
+
+    background: #2563eb;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+   ===================================================== */
+
+.container {
+
+    width: 90%;
+
+    max-width: 1050px;
+
+    margin: 40px auto;
+}
+
+
+/* =====================================================
+   PROFILE CARD
+   POSITION: RELATIVE
+   ===================================================== */
+
+.profile-card {
+
+    position: relative;
+
+    background: white;
+
+    padding: 38px;
+
+    border: 1px solid #dbe2ea;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =====================================================
+   ACTIVE STUDENT BADGE
+   POSITION: ABSOLUTE
+   ===================================================== */
+
+.active-badge {
+
+    position: absolute;
+
+    top: 22px;
+
+    right: 22px;
+
+    background: #16a34a;
+
+    color: white;
+
+    padding: 8px 16px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =====================================================
+   PROFILE HEADER
+   ===================================================== */
+
+.profile-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 32px;
+
+    padding-bottom: 32px;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+/* Profile Image */
+
+.profile-header img {
+
+    width: 160px;
+
+    height: 160px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #2563eb;
+
+    padding: 3px;
+
+    background: white;
+}
+
+
+/* Profile label */
+
+.profile-label {
+
+    display: inline-block;
+
+    margin-bottom: 5px;
+
+    color: #2563eb;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* Profile name */
+
+.profile-intro h1 {
+
+    color: #172554;
+
+    margin-bottom: 8px;
+
+    font-size: 31px;
+}
+
+
+.profile-intro p {
+
+    color: #555;
+
+    margin-bottom: 5px;
+}
+
+
+/* =====================================================
+   CONTACT BUTTON
+   ===================================================== */
+
+.contact-btn {
+
+    margin-top: 15px;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Button hover */
+
+.contact-btn:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 4px 10px rgba(37, 99, 235, 0.3);
+}
+
+
+/* =====================================================
+   GENERAL SECTIONS
+   ===================================================== */
+
+.info-section {
+
+    margin-top: 35px;
+}
+
+
+.info-section h2 {
+
+    color: #172554;
+
+    margin-bottom: 20px;
+
+    padding-bottom: 9px;
+
+    border-bottom: 2px solid #2563eb;
+
+    font-size: 22px;
+}
+
+
+/* =====================================================
+   PERSONAL INFORMATION
+   ===================================================== */
+
+.personal-info {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+
+.info-box {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    padding: 16px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+.info-box:hover {
+
+    border-color: #93c5fd;
+
+    transform: translateY(-2px);
+}
+
+
+.info-box strong {
+
+    color: #1d4ed8;
+
+    font-size: 14px;
+}
+
+
+.info-box span {
+
+    color: #374151;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   ACADEMIC INFORMATION
+   CSS GRID
+   ===================================================== */
+
+.academic-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.academic-box {
+
+    padding: 22px;
+
+    background: #eff6ff;
+
+    border: 1px solid #bfdbfe;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+
+/* Academic card hover */
+
+.academic-box:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.academic-box h3 {
+
+    margin-bottom: 8px;
+
+    color: #1d4ed8;
+
+    font-size: 17px;
+}
+
+
+.academic-box p {
+
+    color: #374151;
+}
+
+
+.cgpa {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #16a34a !important;
+}
+
+
+/* =====================================================
+   SKILLS
+   ===================================================== */
+
+.skills {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+
+.skills span {
+
+    padding: 9px 17px;
+
+    background: #172554;
+
+    color: white;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+/* Skill hover */
+
+.skills span:hover {
+
+    background: #2563eb;
+
+    transform: scale(1.05);
+}
+
+
+/* =====================================================
+   ACHIEVEMENTS
+   ===================================================== */
+
+.achievements {
+
+    list-style: none;
+}
+
+
+.achievements li {
+
+    margin-bottom: 12px;
+
+    padding: 14px 16px;
+
+    background: #f8fafc;
+
+    border-left: 4px solid #2563eb;
+
+    border-radius: 4px;
+
+    transition: 0.3s;
+}
+
+
+.achievements li:hover {
+
+    background: #eff6ff;
+
+    transform: translateX(4px);
+}
+
+
+/* =====================================================
+   COURSES
+   ===================================================== */
+
+.course-list {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+
+.course-list span {
+
+    padding: 11px 18px;
+
+    background: #eef2ff;
+
+    color: #1e3a8a;
+
+    border: 1px solid #c7d2fe;
+
+    border-radius: 7px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+.course-list span:hover {
+
+    background: #2563eb;
+
+    color: white;
+}
+
+
+/* =====================================================
+   RESULT
+   ===================================================== */
+
+.result-box {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.result-box div {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 20px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 8px;
+}
+
+
+.result-box strong {
+
+    color: #172554;
+}
+
+
+.result-box span {
+
+    color: #2563eb;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+
+    text-align: center;
+
+    margin-top: 40px;
+
+    padding: 28px 20px;
+
+    background: #172554;
+
+    color: white;
+}
+
+
+footer h3 {
+
+    margin-bottom: 8px;
+}
+
+
+footer p {
+
+    margin-bottom: 5px;
+
+    color: #dbeafe;
+}
+
+
+footer .copyright {
+
+    margin-top: 12px;
+
+    font-size: 13px;
+
+    color: #93c5fd;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+@media (max-width: 750px) {
+
+    .navbar {
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .nav-links {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .profile-header {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .profile-intro h1 {
+
+        font-size: 26px;
+    }
+
+
+    .personal-info,
+
+    .academic-grid,
+
+    .result-box {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .active-badge {
+
+        position: static;
+
+        display: inline-block;
+
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .profile-card {
+
+        padding: 25px 18px;
+    }
+
+
+    .profile-header img {
+
+        width: 135px;
+
+        height: 135px;
+    }
+
+
+    .nav-links a {
+
+        padding: 8px 10px;
+
+        font-size: 14px;
+    }
+
+}
