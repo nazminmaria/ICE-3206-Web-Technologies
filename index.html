@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Technologies - Tasks</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f2fe, #f3e8ff);
+            min-height: 100vh;
+            padding: 40px 25px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            color: #1e293b;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 18px;
+            color: #475569;
+        }
+
+        .task-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .task-card {
+            background: white;
+            border-radius: 18px;
+            padding: 30px 25px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+            transition: 0.3s;
+            border-top: 6px solid;
+        }
+
+        .task-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .task-number {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .task-card h2 {
+            color: #1e293b;
+            margin-bottom: 12px;
+            font-size: 24px;
+        }
+
+        .task-card p {
+            color: #64748b;
+            font-size: 15px;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Task 1 */
+        .task1 {
+            border-top-color: #3b82f6;
+        }
+
+        .task1 .task-number {
+            background: #3b82f6;
+        }
+
+        .task1 .btn {
+            background: #3b82f6;
+        }
+
+        .task1 .btn:hover {
+            background: #2563eb;
+        }
+
+        /* Task 2 */
+        .task2 {
+            border-top-color: #ec4899;
+        }
+
+        .task2 .task-number {
+            background: #ec4899;
+        }
+
+        .task2 .btn {
+            background: #ec4899;
+        }
+
+        .task2 .btn:hover {
+            background: #db2777;
+        }
+
+        /* Task 3 */
+        .task3 {
+            border-top-color: #8b5cf6;
+        }
+
+        .task3 .task-number {
+            background: #8b5cf6;
+        }
+
+        .task3 .btn {
+            background: #8b5cf6;
+        }
+
+        .task3 .btn:hover {
+            background: #7c3aed;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .task-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .task-container {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Web Technologies</h1>
+            <p>ICE-3206 | My Course Tasks</p>
+        </div>
+
+        <div class="task-container">
+
+            <!-- Task 1 -->
+            <div class="task-card task1">
+                <div class="task-number">1</div>
+
+                <h2>Student Profile</h2>
+
+                <p>
+                    A simple student profile webpage
+                    created using HTML and CSS.
+                </p>
+
+                <a href="Task_1-Student_Profile/index.html" class="btn">
+                    View Task 1
+                </a>
+            </div>
+
+
+            <!-- Task 2 -->
+            <div class="task-card task2">
+                <div class="task-number">2</div>
+
+                <h2>News Portal</h2>
+
+                <p>
+                    A university news portal webpage
+                    designed using HTML and CSS.
+                </p>
+
+                <a href="Task_2-News_Portal/index.html" class="btn">
+                    View Task 2
+                </a>
+            </div>
+
+
+            <!-- Task 3 -->
+            <div class="task-card task3">
+                <div class="task-number">3</div>
+
+                <h2>Student Dashboard</h2>
+
+                <p>
+                    A student dashboard interface
+                    created using HTML and CSS.
+                </p>
+
+                <a href="Task_3-Student_Dashboard/index.html" class="btn">
+                    View Task 3
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Maria | ICE-3206 Web Technologies</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
